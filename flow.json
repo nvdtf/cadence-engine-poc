@@ -1,0 +1,24 @@
+{
+	"contracts": {
+		"SampleEngine": "contracts/SampleEngine.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "bf1d9ebb2a7cef1560bfcf1a30cfc21f6e05bb4133f483850d8b0b8354e94c8f"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"SampleEngine"
+			]
+		}
+	}
+}
